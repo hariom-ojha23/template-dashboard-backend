@@ -10,9 +10,6 @@ app.use(express.json())
 app.use(cors())
 connectDB()
 
-app.use('/', (req, res) => {
-  res.send('Welcome to server')
-})
 app.use('/api/v1/main', router)
 
 const port = process.env.PORT || 5000
